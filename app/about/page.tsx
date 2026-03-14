@@ -119,7 +119,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-4">地址</p>
-            <p className="text-gray-900 text-lg mb-2">桃園市八德區陸光街50巷1-1號</p>
+            <p className="text-gray-900 text-lg mb-2">33442 桃園市八德區介壽路一段936號</p>
             <a
               href="https://maps.app.goo.gl/vR3FCvDGJCaFfcCg7"
               target="_blank"

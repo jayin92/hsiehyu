@@ -81,8 +81,8 @@ export default function Home() {
             <div>
               <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">地址</p>
               <p className="text-gray-700 leading-relaxed">
-                桃園市八德區<br />
-                陸光街50巷1-1號
+                33442 桃園市八德區<br />
+                介壽路一段936號
               </p>
               <a
                 href="https://maps.app.goo.gl/vR3FCvDGJCaFfcCg7"

@@ -20,7 +20,7 @@ export default function Contact() {
           {/* Address */}
           <div>
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-4">門市地址</p>
-            <p className="text-xl text-gray-900 mb-2">桃園市八德區陸光街50巷1-1號</p>
+            <p className="text-xl text-gray-900 mb-2">33442 桃園市八德區介壽路一段936號</p>
             <a
               href="https://maps.app.goo.gl/vR3FCvDGJCaFfcCg7"
               target="_blank"
