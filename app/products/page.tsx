@@ -31,8 +31,18 @@ function StockBadge({ status }: { status: string }) {
 // Fabric card
 // ──────────────────────────────────────────────
 function FabricCard({ item }: { item: FabricItem }) {
+  // 假設 Notion 中的圖片 URL 存在 item.imageUrl 中
   return (
-    <div className="border border-gray-100 p-5 hover:shadow-sm transition-shadow bg-white">
+    <div className="border border-gray-100 p-5 hover:shadow-sm transition-shadow bg-white flex flex-col h-full">
+      {item.imageUrl && (
+        <div className="aspect-square mb-4 bg-gray-50 overflow-hidden">
+          <img 
+            src={item.imageUrl} 
+            alt={item.name} 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
       <div className="flex items-start justify-between gap-2 mb-2">
         <h3 className="text-base font-medium text-gray-900">{item.name}</h3>
         <StockBadge status={item.stockStatus} />

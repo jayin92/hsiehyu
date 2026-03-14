@@ -17,6 +17,7 @@ export interface FabricItem {
   quantity: number | null
   price: number | null
   description: string
+  imageUrl: string | null
 }
 
 export interface CategoryGroup {
@@ -31,6 +32,23 @@ function getTitle(page: PageObjectResponse, prop: string): string {
     return p.title.map((t) => t.plain_text).join('')
   }
   return ''
+}
+
+function getImageUrl(page: PageObjectResponse): string | null {
+  // Notion 頁面物件中的 children 需要透過 API 另外獲取，這裡簡化處理：
+  // 檢查頁面屬性是否有直接的 URL，或者我們修改策略：
+  // 由於 Notion API 獲取 block children 需額外呼叫，我們先檢查頁面內是否有 cover
+  const cover = page.cover
+  if (cover?.type === 'external') {
+    return cover.external.url
+  }
+  // 或者檢查頁面內是否有 Image 欄位
+  const p = page.properties['圖片']
+  if (p?.type === 'files') {
+    const file = p.files[0]
+    return file.type === 'external' ? file.external.url : file.type === 'file' ? file.file.url : null
+  }
+  return null
 }
 
 function getSelect(page: PageObjectResponse, prop: string): string {
@@ -113,6 +131,7 @@ export async function getInventory(): Promise<CategoryGroup[]> {
       quantity: getNumber(page, '庫存數量'),
       price: getNumber(page, '單價'),
       description: getRichText(page, '描述'),
+      imageUrl: getImageUrl(page),
     }))
 
     // Group by category
