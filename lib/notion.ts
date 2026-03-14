@@ -83,6 +83,14 @@ function getRichText(page: PageObjectResponse, prop: string): string {
   return ''
 }
 
+function getUrl(page: PageObjectResponse, prop: string): string | null {
+  const p = page.properties[prop]
+  if (p?.type === 'url') {
+    return p.url ?? null
+  }
+  return null
+}
+
 // getCheckbox is used in the Notion filter query (server-side),
 // but available as a helper if needed client-side too.
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -131,7 +139,7 @@ export async function getInventory(): Promise<CategoryGroup[]> {
       quantity: getNumber(page, '庫存數量'),
       price: getNumber(page, '單價'),
       description: getRichText(page, '描述'),
-      imageUrl: getImageUrl(page),
+      imageUrl: getUrl(page, '商品圖') ?? getImageUrl(page),
     }))
 
     // Group by category
