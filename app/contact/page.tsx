@@ -47,7 +47,11 @@ export default function Contact() {
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-4">營業時間</p>
             <div className="space-y-2">
               <div className="flex justify-between text-gray-700 py-2 border-b border-gray-100">
-                <span>週一至週六</span>
+                <span>週一至週五</span>
+                <span className="font-medium">09:00 – 20:00</span>
+              </div>
+              <div className="flex justify-between text-gray-700 py-2 border-b border-gray-100">
+                <span>週六</span>
                 <span className="font-medium">09:00 – 17:00</span>
               </div>
               <div className="flex justify-between text-gray-400 py-2 border-b border-gray-100">
@@ -55,7 +59,6 @@ export default function Contact() {
                 <span>休息</span>
               </div>
             </div>
-            <p className="text-xs text-gray-400 mt-2">＊以上時間待確認，請來電洽詢</p>
           </div>
         </div>
 

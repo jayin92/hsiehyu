@@ -107,9 +107,10 @@ export default function Home() {
             </div>
             <div>
               <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">營業時間</p>
-              <p className="text-gray-700">週一至週六</p>
+              <p className="text-gray-700">週一至週五</p>
+              <p className="text-gray-900 font-medium">09:00 – 20:00</p>
+              <p className="text-gray-700 mt-2">週六</p>
               <p className="text-gray-900 font-medium">09:00 – 17:00</p>
-              <p className="text-xs text-gray-400 mt-1">＊時間待確認，請來電洽詢</p>
             </div>
             <div>
               <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">顧客評價</p>
