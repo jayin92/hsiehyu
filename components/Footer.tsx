@@ -14,7 +14,7 @@ export default function Footer() {
             <p className="font-medium text-gray-700 mb-1">聯絡資訊</p>
             <p>33442 桃園市八德區介壽路一段936號</p>
             <p>電話：<a href="tel:03-361-3073" className="hover:text-gray-700">03-361-3073</a></p>
-            <p>週一至週五 09:00–20:00｜週六 09:00–17:00</p>
+            <p>週一─週五 09:00–20:00｜週六 09:00–17:00｜週日公休</p>
           </div>
 
           <div className="flex flex-col gap-1 text-sm">
