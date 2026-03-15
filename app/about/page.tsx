@@ -1,6 +1,6 @@
 export const metadata = {
   title: '關於我們 | 協裕布莊',
-  description: '了解協裕布莊的故事，三十年專注布料的專業與熱情。',
+  description: '了解協裕布莊的故事，六十年專注布料的專業與熱情。',
 }
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
           </h2>
           <div className="space-y-4 text-gray-600 leading-relaxed">
             <p>
-              協裕布莊位於桃園市八德區，多年來專注於提供優質布料，
+              協裕布莊位於桃園市八德區，六十年來專注於提供優質布料，
               服務無數裁縫師傅、服裝設計師及手作愛好者。
             </p>
             <p>
@@ -27,7 +27,7 @@ export default function About() {
               從蠶絲到絲綢，每個環節都需要用心對待。
             </p>
             <p>
-              多年的專業積累，讓我們能夠為客戶提供精準的選布建議，
+              六十年的專業積累，讓我們能夠為客戶提供精準的選布建議，
               無論是日常服飾、特殊訂製還是創意手作，我們都能找到最合適的材料。
             </p>
             <p>

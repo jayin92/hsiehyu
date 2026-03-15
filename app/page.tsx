@@ -13,7 +13,7 @@ export default function Home() {
             協裕布莊
           </h1>
           <p className="text-xl text-gray-500 font-light leading-relaxed mb-10">
-            三十年匠心，每一匹布料都是品質的承諾。
+            六十年匠心，每一匹布料都是品質的承諾。
             <br />
             專業布料選品，為您的每個創作提供最佳素材。
           </p>
