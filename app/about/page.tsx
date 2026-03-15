@@ -134,20 +134,18 @@ export default function About() {
             </a>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="aspect-[4/3] bg-gray-50 border border-gray-100 flex flex-col items-center justify-center gap-2">
-            <svg className="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-            </svg>
-            <p className="text-sm text-gray-300">地圖預覽</p>
-            <a
-              href="https://maps.app.goo.gl/vR3FCvDGJCaFfcCg7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-gray-400 underline underline-offset-1 hover:text-gray-600"
-            >
-              點擊開啟 Google Maps
-            </a>
+          {/* Map */}
+          <div className="aspect-[4/3] bg-gray-50 border border-gray-100 overflow-hidden">
+            <iframe
+              src="https://maps.google.com/maps?q=33442+桃園市八德區介壽路一段936號&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="協裕布莊地圖"
+            />
           </div>
         </div>
       </section>

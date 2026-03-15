@@ -18,8 +18,10 @@ export default function Navbar() {
   return (
     <header className="border-b border-gray-100 sticky top-0 bg-white z-50">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold tracking-wide text-gray-900">
-          協裕布莊
+        <Link href="/" className="flex items-center gap-2.5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/logo.png" alt="協裕布莊" className="w-8 h-8 object-cover rounded" />
+          <span className="text-lg font-semibold tracking-wide text-gray-900">協裕布莊</span>
         </Link>
 
         {/* Desktop nav */}

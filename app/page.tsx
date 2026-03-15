@@ -34,16 +34,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Hero Image Placeholder */}
+      {/* Hero Fabric Display */}
       <section className="max-w-5xl mx-auto px-6 mb-20">
-        <div className="w-full aspect-[16/7] bg-gray-50 border border-gray-100 flex items-center justify-center">
-          <div className="text-center text-gray-300">
-            <div className="w-16 h-16 mx-auto mb-3 border-2 border-dashed border-gray-200 flex items-center justify-center">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+        <div className="w-full aspect-[16/7] relative overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hero.png"
+            alt="協裕布莊精選布料"
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay with contact info */}
+          <div className="absolute inset-0 bg-black/30 flex items-end">
+            <div className="p-8 text-white">
+              <p className="text-sm tracking-[0.2em] text-gray-200 mb-1 uppercase">Hsiehyu Store</p>
+              <p className="text-lg font-light mb-2">精選布料，歡迎親臨選購</p>
+              <a href="tel:03-361-3073" className="text-2xl font-medium tracking-widest hover:text-gray-300 transition-colors">
+                03-361-3073
+              </a>
             </div>
-            <p className="text-sm">主視覺圖片（待上傳）</p>
           </div>
         </div>
       </section>
@@ -77,7 +85,7 @@ export default function Home() {
       <section className="bg-gray-50 py-16">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-2xl font-light text-gray-900 mb-10">營業資訊</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div>
               <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">地址</p>
               <p className="text-gray-700 leading-relaxed">
@@ -92,6 +100,10 @@ export default function Home() {
               >
                 Google Maps →
               </a>
+            </div>
+            <div>
+              <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">電話</p>
+              <a href="tel:03-361-3073" className="text-gray-900 font-medium hover:underline">03-361-3073</a>
             </div>
             <div>
               <p className="text-xs tracking-widest text-gray-400 uppercase mb-3">營業時間</p>

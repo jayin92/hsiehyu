@@ -8,7 +8,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: '協裕布莊 Hsiehyu Store',
-  description: '桃園市八德區專業布料行，提供棉布、絲料、蕾絲、刺繡布、牛仔布及功能性布料。',
+  description: '桃園市八德區協裕布莊，電話 03-361-3073，提供棉布、絲料、蕾絲、刺繡布、牛仔布及功能性布料。週一至週六 09:00–17:00，歡迎親臨選購。',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    title: '協裕布莊 Hsiehyu Store',
+    description: '桃園市八德區協裕布莊，專業布料行。電話 03-361-3073。',
+    images: ['/images/logo.png'],
+  },
 }
 
 export default function RootLayout({

@@ -38,9 +38,8 @@ export default function Contact() {
           <div>
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-4">電話</p>
             <p className="text-xl text-gray-900">
-              （待補充）
+              <a href="tel:03-361-3073">03-361-3073</a>
             </p>
-            <p className="text-sm text-gray-400 mt-1">請親臨門市或查詢 Google Maps 頁面取得電話</p>
           </div>
 
           {/* Hours */}
@@ -65,32 +64,35 @@ export default function Contact() {
           {/* Line QR */}
           <div>
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-4">Line 聯絡</p>
-            <div className="w-40 h-40 bg-gray-50 border border-gray-100 flex flex-col items-center justify-center gap-2">
-              <svg className="w-10 h-10 text-gray-200" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            <a
+              href="https://line.me/R/ti/p/@909bwihx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-5 py-3 bg-[#06C755] text-white rounded-lg hover:bg-[#05b34d] transition-colors"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.921 1.458 5.527 3.742 7.242l-.822 3.073a.3.3 0 00.44.333l3.397-1.993A11.08 11.08 0 0012 20.484c5.523 0 10-4.144 10-9.241C22 6.145 17.523 2 12 2zm-3.5 12.5h-1.25A.25.25 0 017 14.25v-4.5A.25.25 0 017.25 9.5H8.5a.25.25 0 01.25.25v4.5a.25.25 0 01-.25.25zm2.25 0h-1.25a.25.25 0 01-.25-.25v-2.5l-1.5-2.1a.25.25 0 01.2-.4H9.2a.25.25 0 01.2.1l.85 1.19.85-1.19a.25.25 0 01.2-.1h1.25a.25.25 0 01.2.4l-1.5 2.1v2.5a.25.25 0 01-.25.25zm5.5 0H15a.25.25 0 01-.25-.25v-1.75H13.5v1.75a.25.25 0 01-.25.25H12a.25.25 0 01-.25-.25v-4.5A.25.25 0 0112 9.5h1.25a.25.25 0 01.25.25V11h1.25V9.75a.25.25 0 01.25-.25H16.25a.25.25 0 01.25.25v4.5a.25.25 0 01-.25.25z"/>
               </svg>
-              <p className="text-xs text-gray-300 text-center px-2">Line QR Code<br/>（待上傳）</p>
-            </div>
-            <p className="text-sm text-gray-500 mt-3">掃描 QR Code 加入 Line 好友</p>
+              加入 LINE 好友
+            </a>
+            <p className="text-sm text-gray-400 mt-3">ID：@909bwihx</p>
+            <p className="text-sm text-gray-500 mt-1">加入後可直接詢問商品或預約來店</p>
           </div>
 
           {/* Map */}
           <div>
             <p className="text-xs tracking-widest text-gray-400 uppercase mb-4">地圖</p>
-            <div className="aspect-square bg-gray-50 border border-gray-100 flex flex-col items-center justify-center gap-2">
-              <svg className="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <p className="text-xs text-gray-300">互動地圖</p>
-              <a
-                href="https://maps.app.goo.gl/vR3FCvDGJCaFfcCg7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-gray-400 underline underline-offset-1 hover:text-gray-600 transition-colors"
-              >
-                開啟 Google Maps →
-              </a>
+            <div className="aspect-square bg-gray-50 border border-gray-100 overflow-hidden">
+              <iframe
+                src="https://maps.google.com/maps?q=33442+桃園市八德區介壽路一段936號&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="協裕布莊地圖"
+              />
             </div>
           </div>
         </div>
