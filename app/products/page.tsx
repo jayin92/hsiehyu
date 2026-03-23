@@ -12,7 +12,7 @@ export default function Products() {
         <p className="text-xs tracking-[0.2em] text-gray-400 uppercase mb-4">Fabric Inquiry</p>
         <h1 className="text-4xl font-light text-gray-900 mb-4">布料種類詢問</h1>
         <p className="text-gray-500 max-w-xl leading-relaxed">
-          協裕布莊提供多樣化的布料選擇，包含棉布、絲料、蕾絲、刺繡布、牛仔布及功能性布料等。
+          協裕布莊提供多款布料選擇。
           如需了解詳細種類、顏色、價格或庫存，歡迎透過 LINE 客服直接詢問，我們將提供專業建議。
         </p>
       </div>

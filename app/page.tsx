@@ -64,7 +64,7 @@ export default function Home() {
           <div>
             <h2 className="text-xl font-light text-gray-900 mb-2">想了解布料種類？</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
-              我們提供多種棉布、絲料、蕾絲、刺繡布、牛仔布及功能性布料。<br />
+              我們提供多款布料。<br />
               歡迎直接透過 LINE 客服詢問，我們將為您提供專業建議。
             </p>
           </div>
